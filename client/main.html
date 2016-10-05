@@ -1,0 +1,34 @@
+<head>
+  <title>Meteor REST Example</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Latest Flickr activity</h1>
+
+    {{> activity}}
+  </div>
+</body>
+
+<template name="activity">
+  <table class="table">
+    <thead>
+      <th>Image</th>
+      <th>Title</th>
+      <th>Author</th>
+    </thead>
+    <tbody>
+      {{#each photos}}
+      {{> activityItem}}
+      {{/each}}
+    </tbody>
+  </table>
+</template>
+
+<template name="activityItem">
+  <tr>
+    <td><a href="{{image}}" target="_blank"><img height="100" src="{{image}}"></a></td>
+    <td>{{title}}</td>
+    <td>{{author}}</td>
+  </tr>
+</template>
