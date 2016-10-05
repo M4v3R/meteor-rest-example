@@ -9,6 +9,6 @@ Very simple example on how to use Meteor to fetch data from a REST API, display 
 3. Run: 
 
 ```
-cd meteor-rest-example`
+cd meteor-rest-example
 meteor
 ```
